@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Views.Activities.RegisterPerson">
+
+    <EditText
+        android:id="@+id/edtRegisPersonDocument"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtRegisPersonName"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisPersonDocument"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisPersonDocument"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisPersonDocument" />
+
+    <EditText
+        android:id="@+id/edtRegisPersonAge"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisPersonName" />
+
+    <EditText
+        android:id="@+id/edtRegisPersonEmail"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisPersonAge"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisPersonAge"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisPersonAge" />
+
+    <EditText
+        android:id="@+id/edtRegisPersonTelephone"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisPersonEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisPersonEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisPersonEmail" />
+
+    <Button
+        android:id="@+id/btnRegisPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisPersonTelephone"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisPersonTelephone"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisPersonTelephone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
