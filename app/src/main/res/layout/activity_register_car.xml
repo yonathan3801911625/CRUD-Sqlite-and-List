@@ -120,15 +120,17 @@
         android:hint="Valor"
         android:inputType="textPersonName"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarID"
-        tools:layout_editor_absoluteX="24dp" />
+        app:layout_constraintEnd_toStartOf="@+id/edtRegisCarPlaca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarID" />
 
     <Button
         android:id="@+id/btnRegisCar"
-        android:backgroundTint="@color/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:backgroundTint="@color/btnRegistrar"
         android:text="Registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

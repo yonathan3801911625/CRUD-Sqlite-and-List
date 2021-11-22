@@ -43,14 +43,24 @@ public class DataBase extends SQLiteOpenHelper {
                         "%s TEXT NOT NULL," + //color
                         "%s TEXT NOT NULL," + //tipo
                         "%s TEXT NOT NULL," + //url
-                        "%s TEXT," + //documento
+                        "%s TEXT," + //documento Propietario
+                        "foreign key(%s) references %s (%s))"  //declaracion llave foranea
+/*
+                        "%s TEXT," + //documento Vendedor
                         "foreign key(%s) references %s (%s))" //declaracion llave foranea
+*/
+
                 ,Tablas.Carros, Structure.ColumnCar.idC,
                 Structure.ColumnCar.nameC,Structure.ColumnCar.valueC,
                 Structure.ColumnCar.placaC,Structure.ColumnCar.modelC,
                 Structure.ColumnCar.colorC, Structure.ColumnCar.typeC, Structure.ColumnCar.urlC,
-                Structure.ColumnCar.documentC,Structure.ColumnCar.documentC,
-                Tablas.Personas, Structure.ColumnPerson.documentP));
+                Structure.ColumnCar.documentCPropietario,Structure.ColumnCar.documentCPropietario,
+                Tablas.Personas, Structure.ColumnPerson.documentP
+                /*
+                ,Structure.ColumnCar.documentCVendedor, Structure.ColumnCar.documentCVendedor,
+                Tablas.Vendedores,Structure.ColumnSeller.documentS
+                */
+        ));
 
 
         db.execSQL(String.format("CREATE TABLE %s " +

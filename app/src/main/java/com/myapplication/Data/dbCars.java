@@ -27,8 +27,9 @@ public class dbCars {
         cv.put(Structure.ColumnCar.modelC,c.getModel());
         cv.put(Structure.ColumnCar.colorC,c.getColor());
         cv.put(Structure.ColumnCar.typeC, c.getType());
-        //cv.put(Structure.ColumnCar.documentC, c.getDocument());
         cv.put(Structure.ColumnCar.urlC, c.getUrl());
+        //cv.put(Structure.ColumnCar.documentCPropietario, c.getDocumentPropietario());
+        //cv.put(Structure.ColumnCar.documentCVendedor, c.getDocumentVendedor());
         db.insert(DataBase.Tablas.Carros,null, cv);
     }
 
@@ -64,11 +65,12 @@ public class dbCars {
                 car.setName(c.getString(c.getColumnIndex(Structure.ColumnCar.nameC)));
                 car.setValue(c.getString(c.getColumnIndex(Structure.ColumnCar.valueC)));
                 car.setPlaca(c.getString(c.getColumnIndex(Structure.ColumnCar.placaC)));
-                car.setModel(c.getColumnIndex(Structure.ColumnCar.modelC));
+                car.setModel(c.getInt(c.getColumnIndex(Structure.ColumnCar.modelC)));
                 car.setColor(c.getString(c.getColumnIndex(Structure.ColumnCar.colorC)));
                 car.setType(c.getString(c.getColumnIndex(Structure.ColumnCar.typeC)));
-                car.setDocument(c.getString(c.getColumnIndex(Structure.ColumnCar.documentC)));
                 car.setUrl(c.getString(c.getColumnIndex(Structure.ColumnCar.urlC)));
+                //car.setDocumentPropietario(c.getString(c.getColumnIndex(Structure.ColumnCar.documentCPropietario)));
+                //car.setDocumentVendedor(c.getString(c.getColumnIndex(Structure.ColumnCar.documentCVendedor)));
                 objArrayC.add(car);
             }while (c.moveToNext());
         }

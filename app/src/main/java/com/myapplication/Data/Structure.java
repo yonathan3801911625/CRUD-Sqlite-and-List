@@ -11,7 +11,8 @@ public class Structure {
         String colorC = "color_car";
         String typeC = "type_car";
         String urlC = "url_car";
-        String documentC = "document_owner";
+        String documentCPropietario = "document_owner";
+        String documentCVendedor = "document_Seller";
     }
 
     interface ColumnPerson{

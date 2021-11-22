@@ -9,13 +9,14 @@ public class Car {
     private int model;
     private String color;
     private String type;
-    private String document;
+    private String documentPropietario;
     private String url;
+    private String documentVendedor;
 
     public Car() {
     }
 
-    public Car(String id, String name, String value, String placa, int model, String color, String type, String document, String url) {
+    public Car(String id, String name, String value, String placa, int model, String color, String type, String documentPropietario, String url, String documentVendedor) {
         this.id = id;
         this.name = name;
         this.value = value;
@@ -23,8 +24,9 @@ public class Car {
         this.model = model;
         this.color = color;
         this.type = type;
-        this.document = document;
+        this.documentPropietario = documentPropietario;
         this.url = url;
+        this.documentVendedor = documentVendedor;
     }
 
     public String getId() {
@@ -83,12 +85,12 @@ public class Car {
         this.type = type;
     }
 
-    public String getDocument() {
-        return document;
+    public String getDocumentPropietario() {
+        return documentPropietario;
     }
 
-    public void setDocument(String document) {
-        this.document = document;
+    public void setDocumentPropietario(String documentPropietario) {
+        this.documentPropietario = documentPropietario;
     }
 
     public String getUrl() {
@@ -97,5 +99,13 @@ public class Car {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getDocumentVendedor() {
+        return documentVendedor;
+    }
+
+    public void setDocumentVendedor(String documentVendedor) {
+        this.documentVendedor = documentVendedor;
     }
 }
