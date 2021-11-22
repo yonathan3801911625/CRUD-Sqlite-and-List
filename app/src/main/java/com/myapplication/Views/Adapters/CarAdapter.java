@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 import com.myapplication.Model.Car;
 import com.myapplication.R;
+import com.squareup.picasso.Picasso;
 
 public class CarAdapter extends BaseAdapter {
 
@@ -47,27 +48,25 @@ public class CarAdapter extends BaseAdapter {
             v=inf.inflate(R.layout.car_item, null);
         }
         Car objVehicle = objCarAdp.get(i);
-        TextView txtId = v.findViewById(R.id.edtRegisCarID);
-        TextView txtName = v.findViewById(R.id.edtRegisCarName);
-        TextView txtValue = v.findViewById(R.id.edtRegisCarValue);
-        TextView txtPlaca = v.findViewById(R.id.edtRegisCarPlaca);
-        TextView txtModel = v.findViewById(R.id.edtRegisCarModel);
-        TextView txtColor = v.findViewById(R.id.edtRegisCarColor);
-        TextView txtType = v.findViewById(R.id.edtRegisCarType);
-        TextView txtDoc = v.findViewById(R.id.edtRegisCarDocument);
-        TextView txtUrl = v.findViewById(R.id.edtRegisCarUrl);
-        //ImageView img = v.findViewById(R.id.imgPerson);
+        TextView txtName = v.findViewById(R.id.txtCarItemName);
+        TextView txtValue = v.findViewById(R.id.txtCarItemValue);
+        TextView txtPlaca = v.findViewById(R.id.txtCarItemPlaca);
+        TextView txtModel = v.findViewById(R.id.txtCarItemModel);
+        TextView txtColor = v.findViewById(R.id.txtCarItemColor);
+        TextView txtType = v.findViewById(R.id.txtCarItemType);
+        //TextView txtDoc = v.findViewById(R.id.edtRegisCarDocument);
+        TextView txtUrl = v.findViewById(R.id.txtCarItemUrl);
+        ImageView img = v.findViewById(R.id.ImgCarItem);
 
-        txtId.setText(objVehicle.getId());
         txtName.setText(objVehicle.getName());
         txtValue.setText(objVehicle.getValue());
         txtPlaca.setText(objVehicle.getPlaca());
         txtModel.setText(String.valueOf(objVehicle.getModel()));
         txtColor.setText(objVehicle.getColor());
         txtType.setText(objVehicle.getType());
-        txtDoc.setText(objVehicle.getDocument());
+        //txtDoc.setText(objVehicle.getDocument());
         txtUrl.setText(objVehicle.getUrl());
-        //Picasso.get().load("");
+        Picasso.get().load("https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg").into(img);
         return v;
     }
 }

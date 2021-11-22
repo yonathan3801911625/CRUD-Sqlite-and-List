@@ -22,8 +22,8 @@ public class dbPersons {
         cv.put(Structure.ColumnPerson.documentP,p.getDocument());
         cv.put(Structure.ColumnPerson.nameP, p.getName());
         cv.put(Structure.ColumnPerson.edadP,p.getAge());
-        cv.put(Structure.ColumnPerson.nameP,p.getEmail());
-        cv.put(Structure.ColumnPerson.edadP,p.getTelephone());
+        cv.put(Structure.ColumnPerson.emailP,p.getEmail());
+        cv.put(Structure.ColumnPerson.telefonoP,p.getTelephone());
         db.insert(DataBase.Tablas.Personas,null, cv);
     }
 

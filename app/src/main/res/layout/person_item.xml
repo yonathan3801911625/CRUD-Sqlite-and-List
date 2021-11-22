@@ -8,14 +8,14 @@
 
     <TextView
         android:id="@+id/txtPerItemId"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtPerItemName"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ImgPerItem"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -23,56 +23,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtPerItemId"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPerItemId"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/txtPerItemName"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/txtPerItemId"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtPerItemAge"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/txtPerItemTel"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImgPerItem" />
+        app:layout_constraintTop_toTopOf="@+id/txtPerItemId" />
 
     <TextView
         android:id="@+id/txtPerItemTel"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtPerItemMail"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtPerItemAge"
-        app:layout_constraintTop_toBottomOf="@+id/ImgPerItem" />
+        app:layout_constraintStart_toEndOf="@+id/ImgPerItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerItemId" />
 
     <TextView
         android:id="@+id/txtPerItemMail"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/txtPerItemTel"
-        app:layout_constraintTop_toBottomOf="@+id/ImgPerItem" />
+        app:layout_constraintTop_toTopOf="@+id/txtPerItemTel" />
 </androidx.constraintlayout.widget.ConstraintLayout>

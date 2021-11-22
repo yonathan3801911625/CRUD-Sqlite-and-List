@@ -22,4 +22,13 @@ public class Structure {
         String telefonoP = "telephone_person";
     }
 
+    interface ColumnSeller {
+        String documentS = "document_seller";
+        String nameS = "name_seller";
+        String typeS = "type_seller";
+        String areaS = "area_seller";
+        String sucursalS = "sucursal_seller";
+        String telephoneS = "telephone_seller";
+        String emailS = "email_seller";
+    }
 }

@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DataBase extends SQLiteOpenHelper {
 
-    private static final String DATA_BASE_NAME = "CarPer.db";
+    private static final String DATA_BASE_NAME = "CarPerSel.db";
     private static final int ACTUAL_VERSION = 2;
     private final Context context;
 
@@ -18,6 +18,7 @@ public class DataBase extends SQLiteOpenHelper {
     interface Tablas{
         String Carros = "carros";
         String Personas = "personas";
+        String Vendedores = "vendedores";
     }
 
     @Override
@@ -42,15 +43,28 @@ public class DataBase extends SQLiteOpenHelper {
                         "%s TEXT NOT NULL," + //color
                         "%s TEXT NOT NULL," + //tipo
                         "%s TEXT NOT NULL," + //url
-                        "%s TEXT NOT NULL," + //documento
+                        "%s TEXT," + //documento
                         "foreign key(%s) references %s (%s))" //declaracion llave foranea
                 ,Tablas.Carros, Structure.ColumnCar.idC,
                 Structure.ColumnCar.nameC,Structure.ColumnCar.valueC,
                 Structure.ColumnCar.placaC,Structure.ColumnCar.modelC,
                 Structure.ColumnCar.colorC, Structure.ColumnCar.typeC, Structure.ColumnCar.urlC,
-                Structure.ColumnCar.documentC,/*Structure.ColumnCar.documentC,*/
+                Structure.ColumnCar.documentC,Structure.ColumnCar.documentC,
                 Tablas.Personas, Structure.ColumnPerson.documentP));
 
+
+        db.execSQL(String.format("CREATE TABLE %s " +
+                        "(%s TEXT PRIMARY KEY," + //documento
+                        "%s TEXT NOT NULL," + //nombre
+                        "%s TEXT NOT NULL," + //tipo
+                        "%s INTEGER NOT NULL," + //area
+                        "%s TEXT NOT NULL," + //sucursal
+                        "%s TEXT NOT NULL," + //telefono
+                        "%s TEXT NOT NULL)", //email
+                Tablas.Vendedores, Structure.ColumnSeller.documentS,
+                Structure.ColumnSeller.nameS, Structure.ColumnSeller.typeS,
+                Structure.ColumnSeller.areaS, Structure.ColumnSeller.sucursalS,
+                Structure.ColumnSeller.telephoneS, Structure.ColumnSeller.emailS));
 
     }
 
@@ -58,6 +72,7 @@ public class DataBase extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ Tablas.Carros);
         db.execSQL("DROP TABLE IF EXISTS "+ Tablas.Personas);
+        db.execSQL("DROP TABLE IF EXISTS "+ Tablas.Vendedores);
         onCreate(db);
     }
 }

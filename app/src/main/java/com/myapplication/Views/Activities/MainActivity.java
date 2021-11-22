@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button btnPersona;
     Button btnVehiculo;
+    Button btnVendedor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPersona.setOnClickListener(this);
         btnVehiculo = findViewById(R.id.btnVehiculosPrincipal);
         btnVehiculo.setOnClickListener(this);
+        btnVendedor = findViewById(R.id.btnVendedorPrincipal);
+        btnVendedor.setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (v.getId() == R.id.btnVehiculosPrincipal){
             Intent objIntent = new Intent(MainActivity.this, MenuVehiculos.class);
+            startActivity(objIntent);
+        }
+        if (v.getId() == R.id.btnVendedorPrincipal){
+            Intent objIntent = new Intent(MainActivity.this, menu_vendedor.class);
             startActivity(objIntent);
         }
 

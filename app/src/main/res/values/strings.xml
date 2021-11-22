@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">CRUD sqlite and list</string>
-    <string name="per">Personas</string>
-    <string name="veh">Vehiculos</string>
+    <string name="per">Cliente</string>
+    <string name="veh">Vehiculo</string>
+    <string name="ven">Vendedor</string>
 </resources>

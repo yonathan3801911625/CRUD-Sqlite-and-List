@@ -10,4 +10,6 @@
     <color name="lightBlue">#BBE1FA</color>
     <color name="colorText">#0F4C75</color>
     <color name="colorButtonAdd">#C9D6DF</color>
+    <color name="shadow">#6efffa</color>
+    <color name="btnRegistrar">#48466D</color>
 </resources>

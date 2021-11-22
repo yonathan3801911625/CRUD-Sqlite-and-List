@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 import com.myapplication.Model.Person;
 import com.myapplication.R;
+import com.squareup.picasso.Picasso;
 
 public class PersonAdapter extends BaseAdapter {
 
@@ -49,18 +50,18 @@ public class PersonAdapter extends BaseAdapter {
         }
         Person objPerson = objPersonaAdp.get(i);
         TextView txtDoc = v.findViewById(R.id.txtPerItemId);
-        TextView txtName = v.findViewById(R.id.txtCarItemName);
-        TextView txtAge = v.findViewById(R.id.txtPerItemAge);
+        TextView txtName = v.findViewById(R.id.txtPerItemName);
+        //TextView txtAge = v.findViewById(R.id.txtPerItemAge);
         TextView txtEmail = v.findViewById(R.id.txtPerItemMail);
         TextView txtTel = v.findViewById(R.id.txtPerItemTel);
         ImageView img = v.findViewById(R.id.ImgPerItem);
 
         txtDoc.setText(objPerson.getDocument());
         txtName.setText(objPerson.getName());
-        txtAge.setText(String.valueOf(objPerson.getAge()));
+        //txtAge.setText(String.valueOf(objPerson.getAge()));
         txtEmail.setText(objPerson.getEmail());
         txtTel.setText(objPerson.getTelephone());
-        //Picasso.get().load("");
+        Picasso.get().load("https://images.pexels.com/photos/4560431/pexels-photo-4560431.jpeg");
 
         return v;
     }

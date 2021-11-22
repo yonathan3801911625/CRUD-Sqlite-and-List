@@ -30,17 +30,17 @@ public class RegisterCar extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_car);
-        edtId.findViewById(R.id.edtRegisCarID);
-        edtName.findViewById(R.id.edtRegisCarName);
-        edtValue.findViewById(R.id.edtRegisCarValue);
-        edtPlaca.findViewById(R.id.edtRegisCarPlaca);
-        edtModel.findViewById(R.id.edtRegisCarModel);
-        edtColor.findViewById(R.id.edtRegisCarColor);
-        edtType.findViewById(R.id.edtRegisCarType);
-        edtDoc.findViewById(R.id.edtRegisCarDocument);
-        edtURL.findViewById(R.id.edtRegisCarUrl);
+        edtId = findViewById(R.id.edtRegisCarID);
+        edtName = findViewById(R.id.edtRegisCarName);
+        edtValue = findViewById(R.id.edtRegisCarValue);
+        edtPlaca = findViewById(R.id.edtRegisCarPlaca);
+        edtModel = findViewById(R.id.edtRegisCarModel);
+        edtColor = findViewById(R.id.edtRegisCarColor);
+        edtType =findViewById(R.id.edtRegisCarType);
+        edtDoc = findViewById(R.id.edtRegisCarDocument);
+        edtURL = findViewById(R.id.edtRegisCarUrl);
 
-        btnAdd.findViewById(R.id.btnRegisCar);
+        btnAdd = findViewById(R.id.btnRegisCar);
         btnAdd.setOnClickListener(this);
     }
 
@@ -55,7 +55,7 @@ public class RegisterCar extends AppCompatActivity implements View.OnClickListen
             c.setModel(Integer.parseInt(edtModel.getText().toString()));
             c.setColor(edtColor.getText().toString());
             c.setType(edtType.getText().toString());
-            c.setDocument(edtDoc.getText().toString());
+            //c.setDocument(edtDoc.getText().toString());
             c.setUrl(edtURL.getText().toString());
 
             DataBase dbHelper= new DataBase(this);

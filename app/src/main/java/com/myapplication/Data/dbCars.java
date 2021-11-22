@@ -27,7 +27,7 @@ public class dbCars {
         cv.put(Structure.ColumnCar.modelC,c.getModel());
         cv.put(Structure.ColumnCar.colorC,c.getColor());
         cv.put(Structure.ColumnCar.typeC, c.getType());
-        cv.put(Structure.ColumnCar.documentC, c.getDocument());
+        //cv.put(Structure.ColumnCar.documentC, c.getDocument());
         cv.put(Structure.ColumnCar.urlC, c.getUrl());
         db.insert(DataBase.Tablas.Carros,null, cv);
     }

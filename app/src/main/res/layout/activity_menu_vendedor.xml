@@ -5,17 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".Views.Activities.MenuVehiculos">
-
+    tools:context=".Views.Activities.menu_vendedor">
 
     <TextView
-        android:id="@+id/titleVehiculos"
+        android:id="@+id/TituloAddVendedores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="cursive"
-        android:gravity="center"
-        android:text="Vehiculos"
+        android:text="Vendedores"
         android:textColor="@color/white"
         android:textSize="40dp"
         android:textStyle="bold|italic"
@@ -23,28 +21,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/lstViewVehicle"
-        android:layout_width="409dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddVehiculos" />
-
     <Button
-        android:id="@+id/btnAddVehiculos"
+        android:id="@+id/btnAddVendedores"
         android:layout_width="62dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="300dp"
         android:backgroundTint="@color/colorButtonAdd"
-        android:gravity="center"
         app:icon="@android:drawable/ic_menu_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleVehiculos"
+        app:layout_constraintTop_toBottomOf="@+id/TituloAddVendedores"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <ListView
+        android:id="@+id/lstMenuVendedores"
+        android:layout_width="409dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddVendedores" />
 </androidx.constraintlayout.widget.ConstraintLayout>

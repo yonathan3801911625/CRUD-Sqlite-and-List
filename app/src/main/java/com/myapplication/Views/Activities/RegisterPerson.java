@@ -26,13 +26,13 @@ public class RegisterPerson extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_person);
-        edtDoc.findViewById(R.id.edtRegisPersonDocument);
-        edtName.findViewById(R.id.edtRegisPersonName);
-        edtAge.findViewById(R.id.edtRegisPersonAge);
-        edtMail.findViewById(R.id.edtRegisPersonEmail);
-        edtTel.findViewById(R.id.edtRegisPersonTelephone);
+        edtDoc = findViewById(R.id.edtRegisPersonDocument);
+        edtName = findViewById(R.id.edtRegisPersonName);
+        edtAge = findViewById(R.id.edtRegisPersonAge);
+        edtMail = findViewById(R.id.edtRegisPersonEmail);
+        edtTel = findViewById(R.id.edtRegisPersonTelephone);
 
-        btnAdd.findViewById(R.id.btnRegisPerson);
+        btnAdd = findViewById(R.id.btnRegisPerson);
         btnAdd.setOnClickListener(this);
     }
 

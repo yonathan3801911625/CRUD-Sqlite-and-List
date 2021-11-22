@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CRUDSqliteAndList">
         <activity
+            android:name=".Views.Activities.RegisterSeller"
+            android:exported="true" />
+        <activity
+            android:name=".Views.Activities.menu_vendedor"
+            android:exported="true" />
+        <activity
             android:name=".Views.Activities.RegisterCar"
             android:exported="true" />
         <activity

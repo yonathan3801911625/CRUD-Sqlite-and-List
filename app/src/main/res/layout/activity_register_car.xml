@@ -9,127 +9,143 @@
 
     <EditText
         android:id="@+id/edtRegisCarID"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:ems="5"
+        android:hint="Id"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/edtRegisCarName"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/TituloRegisVehiculo" />
 
     <EditText
         android:id="@+id/edtRegisCarName"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Nombre"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarID"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarID"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarID" />
-
-    <EditText
-        android:id="@+id/edtRegisCarValue"
         android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarName"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarName"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarName" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtRegisCarID"
+        app:layout_constraintTop_toTopOf="@+id/edtRegisCarID" />
 
     <EditText
         android:id="@+id/edtRegisCarPlaca"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
+        android:ems="5"
+        android:hint="Placa"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarValue"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarValue"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarValue" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/edtRegisCarModel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtRegisCarValue"
+        app:layout_constraintTop_toTopOf="@+id/edtRegisCarValue" />
 
     <EditText
         android:id="@+id/edtRegisCarModel"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
+        android:ems="5"
+        android:hint="Modelo"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarPlaca"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarPlaca"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarPlaca" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtRegisCarPlaca"
+        app:layout_constraintTop_toTopOf="@+id/edtRegisCarValue" />
 
     <EditText
         android:id="@+id/edtRegisCarColor"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:ems="10"
+        android:ems="5"
+        android:hint="Color"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarModel"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarModel"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarModel" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/edtRegisCarType"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarValue" />
 
     <EditText
         android:id="@+id/edtRegisCarType"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
+        android:ems="5"
+        android:hint="Tipo"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarColor"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarColor"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarColor" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtRegisCarColor"
+        app:layout_constraintTop_toTopOf="@+id/edtRegisCarColor" />
 
     <EditText
         android:id="@+id/edtRegisCarDocument"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:ems="10"
+        android:ems="5"
+        android:hint="Documento"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarType"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarType"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarType" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/edtRegisCarUrl"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarColor" />
 
     <EditText
         android:id="@+id/edtRegisCarUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Url"
+        android:inputType="textPersonName"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtRegisCarDocument"
+        app:layout_constraintTop_toTopOf="@+id/edtRegisCarDocument" />
+
+    <EditText
+        android:id="@+id/edtRegisCarValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:ems="10"
+        android:ems="5"
+        android:hint="Valor"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarDocument"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarDocument"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarDocument" />
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarID"
+        tools:layout_editor_absoluteX="24dp" />
 
     <Button
         android:id="@+id/btnRegisCar"
+        android:backgroundTint="@color/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/edtRegisCarUrl"
-        app:layout_constraintStart_toStartOf="@+id/edtRegisCarUrl"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarUrl" />
+        android:layout_marginTop="100dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisCarDocument" />
+
+    <TextView
+        android:id="@+id/TituloRegisVehiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:text="Registro Vehiculo"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
